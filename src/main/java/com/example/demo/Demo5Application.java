@@ -1,7 +1,9 @@
 package com.example.demo;
 
+import demo.postgres.dao.login.AccountExample;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.*;
@@ -11,11 +13,15 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.UUID;
 
+
 @SpringBootApplication
 public class Demo5Application {
-
     public static void main(String[] args) {
         SpringApplication.run(Demo5Application.class, args);
+
+
+        //mybatisdemo ac=new mybatisdemo();
+        //System.out.println(ac.getObj());
         //Activemq ms=new Activemq();
         //ms.sender();
         //ms.JmsReceiver();
